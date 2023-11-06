@@ -2,7 +2,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.get_notas),
+    path('criar', views.create_notas),
+    path('editar', views.update_notas),
+    path('deletar', views.delete_notas),
     path('<str:title>', views.get_by_title),
-    path('create/', views.create_notas)
+    path('', views.get_notas),
 ]
