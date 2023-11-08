@@ -48,4 +48,19 @@ export class AppComponent {
       
     )
   };
+
+  notasclick = (nota:any) => {
+    this.api.getNotas(nota.titile).subscribe(
+      data => {
+        console.log(data);
+      },
+      error => {
+        console.log(
+          'erro',
+          error.message
+        );
+      }
+    ); 
+  }; 
+
 }

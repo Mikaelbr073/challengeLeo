@@ -16,5 +16,13 @@ export class ApiService {
     );
    };
 
+   getNotas(titile:any) : Observable<object> {
+    return this.http.get(this.UrlBase + 'notas/' + titile ,
+    {headers: this.httpFeaders}
+    );
+   };
+
+
+
   
 }

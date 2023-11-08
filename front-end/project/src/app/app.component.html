@@ -1,8 +1,9 @@
 <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">        
 <app-navybar></app-navybar>
-<div class="grid gap-3">
-   <p-card class="col-3 mt-5 ml-3 text-blue-400" *ngFor="let nota of notas" header={{nota.titile}} >
-    <p class="m-2">
+
+<div class="grid gap-3" >
+   <p-card class="col-3 mt-5 ml-3 text-blue-400" *ngFor="let nota of notas" (click)="notasclick(nota)"  header={{nota.titile}} >
+    <p class="m-2" >
       {{nota.body_text}}
     </p>
     <p class="font-bold text-blue-400">{{nota.category}}</p>

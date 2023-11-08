@@ -8,10 +8,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { CardModule } from 'primeng/card';
 import { MenubarModule } from 'primeng/menubar';
 import { NavybarComponent } from './navybar/navybar.component';
+import { NotasDetailComponent } from './notas-detail/notas-detail.component';
 @NgModule({
   declarations: [	
     AppComponent,
-      NavybarComponent
+      NavybarComponent,
+      NotasDetailComponent
    ],
   imports: [
     BrowserModule,
